@@ -1,4 +1,8 @@
 const myModal = new bootstrap.Modal("#register-modal")
+let logged = sessionStorage.getItem("logged")
+const session = localStorage.getItem("session")
+
+checkLogged()
 
 //Logar no sistema
 document.getElementById("login-form").addEventListener("submit", function (e) {
@@ -55,6 +59,20 @@ document.getElementById("create-form").addEventListener("submit", function (e) {
 
     alert("Conta criada com sucesso!")
 })
+
+////////////////////////////////////////////////////
+
+function checkLogged() {
+    if(session) {
+        sessionStorage.setItem("logged", session)
+        logged = session
+    }
+
+    if(logged) {
+        saveSession(logged, session)
+        window.location.href="home.html"
+    }
+}
 
 ////////////////////////////////////////////////////
 

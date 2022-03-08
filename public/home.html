@@ -27,7 +27,8 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse just justify-content-end" id="navbarSupportedContent">
-                    <div class="d-flex">
+                    
+                    <div class="d-flex menu">
                         <a href="home.html">
                             <button class="btn" type="button">
                                 <i class="bi bi-house-door-fill color-secondary fs-4"></i>
@@ -45,8 +46,8 @@
                                 aria-expanded="false">
                                 <i class="bi bi-person-circle fs-4"></i>
                             </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#"> Sair </a></li>
+                            <ul class="dropdown-menu logout" aria-labelledby="dropdownMenuButton1">
+                                <li><button class="dropdown-item logout" id="button-logout"> Sair </button></li>
 
                             </ul>
                         </div>
@@ -137,17 +138,17 @@
 
                             <div class="mb-3">
                                 <label for="value-input" class="form-label">Valor</label>
-                                <input type="number" class="form-control" id="value-input" aria-describedby="emailHelp">
+                                <input type="number" class="form-control" id="value-input" aria-describedby="emailHelp" required>
                             </div>
 
                             <div class="mb-3">
                                 <label for="description-input" class="form-label">Descrição</label>
-                                <input type="text" class="form-control" id="description-input">
+                                <input type="text" class="form-control" id="description-input" required>
                             </div>
 
                             <div class="mb-3">
                                 <label for="date-input" class="form-label">Data</label>
-                                <input type="date" class="form-control" id="date-input">
+                                <input type="date" class="form-control" id="date-input" required>
                             </div>
 
                             <div class="mb-3">
@@ -175,6 +176,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+
+        <script src="./js/home.js"></script>
 </body>
 
 </html>

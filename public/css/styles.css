@@ -80,8 +80,6 @@ header {
     border-radius: 10px;
 }
 
-
-
 .button-float {
     border-radius: 100%;
     height: 60px;
@@ -100,5 +98,13 @@ header {
     border: 2px solid #4C79D3;
     background-color: #FFF;
     color: #4C79D3;
+}
+
+.logout {
+    min-width: 15px;
+}
+
+.menu {
+    margin-right: 20px;
 }
 
